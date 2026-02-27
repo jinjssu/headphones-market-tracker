@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎧 头戴式耳机市场跟踪</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🎧 头戴式耳机市场跟踪仪表板</h1>
+      <p class="subtitle">Top 10 品牌市场份额分析</p>
+      <div class="last-update">
+        数据更新时间：<span id="lastUpdate">2026-02-27</span>
+      </div>
+    </header>
+
+    <!-- Key Metrics -->
+    <section class="metrics">
+      <div class="metric-card">
+        <h3>📊 市场总规模</h3>
+        <div class="metric-value" id="marketSize">$42.8B</div>
+        <div class="metric-change positive">+8.2% YoY</div>
+      </div>
+      <div class="metric-card">
+        <h3>🏆 CR10 集中度</h3>
+        <div class="metric-value" id="cr10">68.5%</div>
+        <div class="metric-change positive">+2.1%</div>
+      </div>
+      <div class="metric-card">
+        <h3>📈 增长最快</h3>
+        <div class="metric-value" id="fastestGrowth">Apple</div>
+        <div class="metric-change positive">+15.3%</div>
+      </div>
+      <div class="metric-card">
+        <h3>🌍 最大市场</h3>
+        <div class="metric-value">北美</div>
+        <div class="metric-change">35.2%</div>
+      </div>
+    </section>
+
+    <!-- Main Charts -->
+    <div class="charts-grid">
+      <section class="chart-container">
+        <h2>📊 市场份额分布</h2>
+        <canvas id="marketShareChart"></canvas>
+      </section>
+
+      <section class="chart-container">
+        <h2>📈 年度趋势对比</h2>
+        <canvas id="trendChart"></canvas>
+      </section>
+    </div>
+
+    <!-- Top 10 Table -->
+    <section class="table-container">
+      <h2>🏅 Top 10 品牌排行榜</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>排名</th>
+            <th>品牌</th>
+            <th>市场份额</th>
+            <th>同比变化</th>
+            <th>主力产品</th>
+            <th>价格区间</th>
+          </tr>
+        </thead>
+        <tbody id="rankingTable">
+          <!-- Dynamic content -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Regional Distribution -->
+    <section class="chart-container full-width">
+      <h2>🌍 区域市场分布</h2>
+      <canvas id="regionalChart"></canvas>
+    </section>
+
+    <!-- Data Editor -->
+    <section class="data-editor">
+      <h2>✏️ 编辑市场数据</h2>
+      <p class="hint">点击数值可直接编辑，数据会自动保存到本地</p>
+      <textarea id="dataEditor" rows="10"></textarea>
+      <div class="button-group">
+        <button id="loadData" class="btn btn-secondary">📂 加载数据</button>
+        <button id="saveData" class="btn btn-primary">💾 保存数据</button>
+        <button id="exportData" class="btn btn-success">📤 导出 CSV</button>
+        <button id="resetData" class="btn btn-danger">🔄 重置数据</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>数据来源：市场调研报告 | 最后更新：<span id="footerDate">2026-02-27</span></p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
