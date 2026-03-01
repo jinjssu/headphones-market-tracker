@@ -192,10 +192,11 @@ function initCharts() {
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      aspectRatio: 1.5,
       plugins: {
         legend: {
           position: 'right',
-          labels: { color: '#fff', padding: 10 }
+          labels: { color: '#fff', padding: 8, boxWidth: 10, font: { size: 10 } }
         }
       }
     }
@@ -215,25 +216,31 @@ function initCharts() {
         borderColor: brandColors[i],
         backgroundColor: brandColors[i] + '20',
         tension: 0.4,
-        fill: true
+        fill: true,
+        borderWidth: 2,
+        pointRadius: 3,
+        pointHoverRadius: 5
       }))
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      aspectRatio: 2.5,
       plugins: {
         legend: {
-          labels: { color: '#fff' }
+          position: 'top',
+          labels: { color: '#fff', padding: 12, boxWidth: 12 }
         }
       },
       scales: {
         y: {
-          beginAtZero: false,
-          grid: { color: 'rgba(255,255,255,0.1)' },
-          ticks: { color: '#888' }
+          min: 0,
+          max: 25,
+          grid: { color: 'rgba(255,255,255,0.08)' },
+          ticks: { color: '#888', callback: (v) => v + '%' }
         },
         x: {
-          grid: { color: 'rgba(255,255,255,0.1)' },
+          grid: { display: false },
           ticks: { color: '#888' }
         }
       }
@@ -265,20 +272,22 @@ function initCharts() {
           'rgba(56, 239, 125, 1)',
           'rgba(255, 159, 64, 1)'
         ],
-        borderWidth: 2
+        borderWidth: 2,
+        borderRadius: 6
       }]
     },
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      aspectRatio: 4,
       plugins: {
         legend: { display: false }
       },
       scales: {
         y: {
-          beginAtZero: true,
-          grid: { color: 'rgba(255,255,255,0.1)' },
-          ticks: { color: '#888' }
+          max: 40,
+          grid: { color: 'rgba(255,255,255,0.08)' },
+          ticks: { color: '#888', callback: (v) => v + '%' }
         },
         x: {
           grid: { display: false },
