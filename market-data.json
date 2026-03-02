@@ -1,0 +1,144 @@
+{
+  "lastUpdate": "2026-03-02",
+  "marketSize": "$42.77B",
+  "marketGrowth": "+8.28%",
+  "cr10": "68.54%",
+  "topBrands": [
+    {
+      "rank": 1,
+      "name": "Apple",
+      "share": 18.39,
+      "change": -0.11,
+      "products": "N/A",
+      "price": "N/A"
+    },
+    {
+      "rank": 2,
+      "name": "Sony",
+      "share": 15.25,
+      "change": 0.05,
+      "products": "N/A",
+      "price": "N/A"
+    },
+    {
+      "rank": 3,
+      "name": "Bose",
+      "share": 12.84,
+      "change": 0.04,
+      "products": "N/A",
+      "price": "N/A"
+    },
+    {
+      "rank": 4,
+      "name": "Sennheiser",
+      "share": 8.46,
+      "change": -0.04,
+      "products": "N/A",
+      "price": "N/A"
+    },
+    {
+      "rank": 5,
+      "name": "Samsung",
+      "share": 7.18,
+      "change": -0.02,
+      "products": "N/A",
+      "price": "N/A"
+    },
+    {
+      "rank": 6,
+      "name": "JBL",
+      "share": 6.76,
+      "change": 0,
+      "products": "N/A",
+      "price": "N/A"
+    },
+    {
+      "rank": 7,
+      "name": "Audio-Technica",
+      "share": 5.51,
+      "change": 0,
+      "products": "N/A",
+      "price": "N/A"
+    },
+    {
+      "rank": 8,
+      "name": "Beats",
+      "share": 4.73,
+      "change": 0,
+      "products": "N/A",
+      "price": "N/A"
+    },
+    {
+      "rank": 9,
+      "name": "Shure",
+      "share": 3.67,
+      "change": 0,
+      "products": "N/A",
+      "price": "N/A"
+    },
+    {
+      "rank": 10,
+      "name": "Bang & Olufsen",
+      "share": 3.46,
+      "change": 0,
+      "products": "N/A",
+      "price": "N/A"
+    }
+  ],
+  "historical": {
+    "years": [
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "data": {
+      "Apple": [
+        14.2,
+        15.8,
+        16.2,
+        18.5
+      ],
+      "Sony": [
+        16.5,
+        15.8,
+        14.9,
+        15.2
+      ],
+      "Bose": [
+        15.2,
+        14.5,
+        14,
+        12.8
+      ],
+      "Sennheiser": [
+        7.8,
+        8.2,
+        8,
+        8.5
+      ],
+      "Samsung": [
+        5.2,
+        5.8,
+        6.1,
+        7.2
+      ]
+    }
+  },
+  "regions": {
+    "labels": [
+      "北美",
+      "欧洲",
+      "亚太",
+      "拉美",
+      "中东非洲"
+    ],
+    "data": [
+      35.2,
+      28.5,
+      26.8,
+      5.5,
+      4
+    ]
+  }
+}

@@ -43,6 +43,19 @@ header h1 {
   margin-top: 15px;
   color: #666;
   font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.auto-badge {
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  color: #000;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
 }
 
 /* Metrics */

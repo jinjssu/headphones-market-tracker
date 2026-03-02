@@ -1,11 +1,15 @@
 /**
  * Headphones Market Tracker
  * 头戴式耳机市场跟踪应用
+ * 数据来源：GitHub 每日自动更新
  */
 
-// 默认市场数据 (2026 Q1)
+// GitHub Raw 数据源 URL
+const DATA_SOURCE_URL = 'https://raw.githubusercontent.com/jinjssu/headphones-market-tracker/main/market-data.json';
+
+// 默认市场数据 (2026 Q1) - 作为 fallback
 const defaultMarketData = {
-  lastUpdate: "2026-02-27",
+  lastUpdate: "2026-03-02",
   marketSize: "$42.8B",
   marketGrowth: "+8.2%",
   cr10: "68.5%",
@@ -66,17 +70,35 @@ document.addEventListener('DOMContentLoaded', () => {
   setupEventListeners();
 });
 
-// 加载数据
-function loadData() {
-  const saved = localStorage.getItem('headphonesMarketData');
-  if (saved) {
-    try {
-      marketData = JSON.parse(saved);
-    } catch (e) {
+// 加载数据 - 优先从 GitHub 获取最新数据
+async function loadData() {
+  let loaded = false;
+  
+  // 尝试从 GitHub 获取最新数据
+  try {
+    const response = await fetch(DATA_SOURCE_URL + '?t=' + Date.now());
+    if (response.ok) {
+      marketData = await response.json();
+      loaded = true;
+      console.log('✅ Data loaded from GitHub:', marketData.lastUpdate);
+    }
+  } catch (e) {
+    console.log('⚠️ GitHub fetch failed, using fallback:', e.message);
+  }
+  
+  // Fallback: localStorage 或默认数据
+  if (!loaded) {
+    const saved = localStorage.getItem('headphonesMarketData');
+    if (saved) {
+      try {
+        marketData = JSON.parse(saved);
+        console.log('📦 Data loaded from localStorage');
+      } catch (e) {
+        marketData = JSON.parse(JSON.stringify(defaultMarketData));
+      }
+    } else {
       marketData = JSON.parse(JSON.stringify(defaultMarketData));
     }
-  } else {
-    marketData = JSON.parse(JSON.stringify(defaultMarketData));
   }
   
   // 更新编辑器
