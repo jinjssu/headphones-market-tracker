@@ -1,0 +1,19 @@
+# Runtime files
+.scheduler.pid
+.scheduler-state.json
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Logs
+*.log
+/tmp/
+
+# Archives
+*.tar.gz
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
