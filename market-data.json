@@ -2,13 +2,13 @@
   "lastUpdate": "2026-03-02",
   "marketSize": "$42.77B",
   "marketGrowth": "+8.1%",
-  "cr10": "68.57%",
+  "cr10": "68.49%",
   "topBrands": [
     {
       "rank": 1,
       "name": "Apple",
-      "share": 18.53,
-      "change": 0.03,
+      "share": 18.65,
+      "change": 0.15,
       "products": "N/A",
       "price": "N/A"
     },
@@ -23,31 +23,31 @@
     {
       "rank": 3,
       "name": "Bose",
-      "share": 12.72,
-      "change": -0.08,
+      "share": 12.82,
+      "change": 0.02,
       "products": "N/A",
       "price": "N/A"
     },
     {
       "rank": 4,
       "name": "Sennheiser",
-      "share": 8.52,
-      "change": 0.02,
+      "share": 8.59,
+      "change": 0.09,
       "products": "N/A",
       "price": "N/A"
     },
     {
       "rank": 5,
       "name": "Samsung",
-      "share": 7.31,
-      "change": 0.11,
+      "share": 7.15,
+      "change": -0.05,
       "products": "N/A",
       "price": "N/A"
     },
     {
       "rank": 6,
       "name": "JBL",
-      "share": 6.85,
+      "share": 6.84,
       "change": 0,
       "products": "N/A",
       "price": "N/A"
@@ -55,7 +55,7 @@
     {
       "rank": 7,
       "name": "Audio-Technica",
-      "share": 5.54,
+      "share": 5.48,
       "change": 0,
       "products": "N/A",
       "price": "N/A"
@@ -63,7 +63,7 @@
     {
       "rank": 8,
       "name": "Beats",
-      "share": 4.76,
+      "share": 4.86,
       "change": 0,
       "products": "N/A",
       "price": "N/A"
@@ -71,7 +71,7 @@
     {
       "rank": 9,
       "name": "Shure",
-      "share": 3.73,
+      "share": 3.72,
       "change": 0,
       "products": "N/A",
       "price": "N/A"
@@ -79,7 +79,7 @@
     {
       "rank": 10,
       "name": "Bang & Olufsen",
-      "share": 3.5,
+      "share": 3.46,
       "change": 0,
       "products": "N/A",
       "price": "N/A"
