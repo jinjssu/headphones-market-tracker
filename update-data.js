@@ -9,16 +9,16 @@ const path = require('path');
 
 // Base data with realistic daily fluctuation ranges
 const brandBaseData = {
-  Apple: { base: 18.5, trend: 0.02, volatility: 0.15 },
-  Sony: { base: 15.2, trend: 0.005, volatility: 0.12 },
-  Bose: { base: 12.8, trend: -0.01, volatility: 0.10 },
-  Sennheiser: { base: 8.5, trend: 0.008, volatility: 0.08 },
-  Samsung: { base: 7.2, trend: 0.015, volatility: 0.12 },
-  JBL: { base: 6.8, trend: 0.003, volatility: 0.06 },
-  'Audio-Technica': { base: 5.5, trend: -0.002, volatility: 0.05 },
-  Beats: { base: 4.8, trend: -0.008, volatility: 0.07 },
-  Shure: { base: 3.7, trend: 0.001, volatility: 0.04 },
-  'Bang & Olufsen': { base: 3.5, trend: 0.004, volatility: 0.05 }
+  Apple: { base: 18.5, trend: 0.02, volatility: 0.15, products: 'AirPods Max', price: '$549' },
+  Sony: { base: 15.2, trend: 0.005, volatility: 0.12, products: 'WH-1000XM5', price: '$349-$399' },
+  Bose: { base: 12.8, trend: -0.01, volatility: 0.10, products: 'QC Ultra', price: '$379-$429' },
+  Sennheiser: { base: 8.5, trend: 0.008, volatility: 0.08, products: 'Momentum 4', price: '$299-$379' },
+  Samsung: { base: 7.2, trend: 0.015, volatility: 0.12, products: 'Galaxy Buds Max', price: '$249-$349' },
+  JBL: { base: 6.8, trend: 0.003, volatility: 0.06, products: 'Tour One M2', price: '$199-$299' },
+  'Audio-Technica': { base: 5.5, trend: -0.002, volatility: 0.05, products: 'M50xBT2', price: '$149-$249' },
+  Beats: { base: 4.8, trend: -0.008, volatility: 0.07, products: 'Studio Pro', price: '$349-$399' },
+  Shure: { base: 3.7, trend: 0.001, volatility: 0.04, products: 'AONIC 50', price: '$299-$399' },
+  'Bang & Olufsen': { base: 3.5, trend: 0.004, volatility: 0.05, products: 'H95', price: '$499-$899' }
 };
 
 const marketMetrics = {
@@ -78,17 +78,24 @@ function generateMarketData() {
   
   // Generate brand shares
   const topBrands = Object.entries(brandBaseData).map(([name, info], index) => {
-    const currentShare = fluctuate(info.base, info.trend, info.volatility);
+    // Get existing brand data if available (to preserve products/price)
+    const existingBrand = existingData?.topBrands?.find(b => b.name === name);
+    
+    // Calculate current share based on existing or base
+    const baseShare = existingBrand?.share || info.base;
+    const currentShare = fluctuate(baseShare, info.trend * 0.1, info.volatility);
+    
+    // Get historical data
     const historical = existingData?.historical?.data?.[name] || [info.base * 0.9, info.base * 0.95, info.base, currentShare];
     const yoyChange = calculateYoY(currentShare, historical);
     
     return {
       rank: index + 1,
       name,
-      share: currentShare,
+      share: Math.max(0.1, currentShare), // Ensure positive share
       change: yoyChange,
-      products: info.products || 'N/A',
-      price: info.price || 'N/A'
+      products: existingBrand?.products || info.products || 'N/A',
+      price: existingBrand?.price || info.price || 'N/A'
     };
   });
   

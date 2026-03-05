@@ -1,88 +1,88 @@
 {
   "lastUpdate": "2026-03-05",
-  "marketSize": "$42.82B",
-  "marketGrowth": "+8.22%",
-  "cr10": "68.43%",
+  "marketSize": "$42.83B",
+  "marketGrowth": "+8.2%",
+  "cr10": "68.57%",
   "topBrands": [
     {
       "rank": 1,
       "name": "Apple",
-      "share": 18.46,
-      "change": -0.04,
-      "products": "N/A",
-      "price": "N/A"
+      "share": 18.59,
+      "change": 0.09,
+      "products": "AirPods Max",
+      "price": "$549"
     },
     {
       "rank": 2,
       "name": "Sony",
-      "share": 15.24,
-      "change": 0.04,
-      "products": "N/A",
-      "price": "N/A"
+      "share": 15.09,
+      "change": -0.11,
+      "products": "WH-1000XM5",
+      "price": "$349-$399"
     },
     {
       "rank": 3,
       "name": "Bose",
-      "share": 12.84,
-      "change": 0.04,
-      "products": "N/A",
-      "price": "N/A"
+      "share": 12.86,
+      "change": 0.06,
+      "products": "QC Ultra",
+      "price": "$379-$429"
     },
     {
       "rank": 4,
       "name": "Sennheiser",
-      "share": 8.49,
-      "change": -0.01,
-      "products": "N/A",
-      "price": "N/A"
+      "share": 8.37,
+      "change": -0.13,
+      "products": "Momentum 4",
+      "price": "$299-$379"
     },
     {
       "rank": 5,
       "name": "Samsung",
-      "share": 7.2,
-      "change": 0,
-      "products": "N/A",
-      "price": "N/A"
+      "share": 7.15,
+      "change": -0.05,
+      "products": "Galaxy Buds Max",
+      "price": "$249-$349"
     },
     {
       "rank": 6,
       "name": "JBL",
       "share": 6.84,
       "change": 0,
-      "products": "N/A",
-      "price": "N/A"
+      "products": "Tour One M2",
+      "price": "$199-$299"
     },
     {
       "rank": 7,
       "name": "Audio-Technica",
-      "share": 5.47,
+      "share": 5.53,
       "change": 0,
-      "products": "N/A",
-      "price": "N/A"
+      "products": "M50xBT2",
+      "price": "$149-$249"
     },
     {
       "rank": 8,
       "name": "Beats",
-      "share": 4.84,
+      "share": 4.73,
       "change": 0,
-      "products": "N/A",
-      "price": "N/A"
+      "products": "Studio Pro",
+      "price": "$349-$399"
     },
     {
       "rank": 9,
       "name": "Shure",
-      "share": 3.67,
+      "share": 3.71,
       "change": 0,
-      "products": "N/A",
-      "price": "N/A"
+      "products": "AONIC 50",
+      "price": "$299-$399"
     },
     {
       "rank": 10,
       "name": "Bang & Olufsen",
       "share": 3.51,
       "change": 0,
-      "products": "N/A",
-      "price": "N/A"
+      "products": "H95",
+      "price": "$499-$899"
     }
   ],
   "historical": {
