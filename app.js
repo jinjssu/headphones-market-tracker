@@ -71,12 +71,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // 加载数据 - 优先从 GitHub 获取最新数据
-async function loadData() {
+async function loadData(showLoading = false) {
   let loaded = false;
+  
+  // 显示加载状态
+  if (showLoading) {
+    const refreshBtn = document.getElementById('refreshData');
+    if (refreshBtn) {
+      refreshBtn.textContent = '⏳';
+      refreshBtn.disabled = true;
+    }
+  }
   
   // 尝试从 GitHub 获取最新数据
   try {
-    const response = await fetch(DATA_SOURCE_URL + '?t=' + Date.now());
+    const response = await fetch(DATA_SOURCE_URL + '?t=' + Date.now(), {
+      cache: 'no-cache'
+    });
     if (response.ok) {
       marketData = await response.json();
       loaded = true;
@@ -101,10 +112,25 @@ async function loadData() {
     }
   }
   
-  // 更新编辑器
+  // 更新显示
   document.getElementById('dataEditor').value = JSON.stringify(marketData, null, 2);
   document.getElementById('lastUpdate').textContent = marketData.lastUpdate;
   document.getElementById('footerDate').textContent = marketData.lastUpdate;
+  
+  // 刷新图表和表格
+  initCharts();
+  renderTable();
+  updateMetrics();
+  
+  // 恢复刷新按钮
+  if (showLoading) {
+    const refreshBtn = document.getElementById('refreshData');
+    if (refreshBtn) {
+      refreshBtn.textContent = '🔄';
+      refreshBtn.disabled = false;
+    }
+    showToast('📊 数据已更新');
+  }
 }
 
 // 保存数据
@@ -326,6 +352,12 @@ function setupEventListeners() {
   document.getElementById('loadData').addEventListener('click', loadData);
   document.getElementById('exportData').addEventListener('click', exportData);
   document.getElementById('resetData').addEventListener('click', resetData);
+  
+  // 刷新按钮
+  const refreshBtn = document.getElementById('refreshData');
+  if (refreshBtn) {
+    refreshBtn.addEventListener('click', () => loadData(true));
+  }
 }
 
 // Toast 提示
