@@ -1,53 +1,53 @@
 {
-  "lastUpdate": "2026-03-21",
-  "marketSize": "$42.8B",
-  "marketGrowth": "+8.23%",
-  "cr10": "68.55%",
+  "lastUpdate": "2026-03-22",
+  "marketSize": "$42.81B",
+  "marketGrowth": "+8.12%",
+  "cr10": "68.52%",
   "topBrands": [
     {
       "rank": 1,
       "name": "Apple",
-      "share": 18.57,
-      "change": 0.07,
+      "share": 18.45,
+      "change": -0.05,
       "products": "AirPods Max",
       "price": "$549"
     },
     {
       "rank": 2,
       "name": "Sony",
-      "share": 15.28,
-      "change": 0.08,
+      "share": 15.27,
+      "change": 0.07,
       "products": "WH-1000XM5",
       "price": "$349-$399"
     },
     {
       "rank": 3,
       "name": "Bose",
-      "share": 13.06,
-      "change": 0.26,
+      "share": 13.08,
+      "change": 0.28,
       "products": "QC Ultra",
       "price": "$379-$429"
     },
     {
       "rank": 4,
       "name": "Sennheiser",
-      "share": 8.05,
-      "change": -0.45,
+      "share": 8.13,
+      "change": -0.37,
       "products": "Momentum 4",
       "price": "$299-$379"
     },
     {
       "rank": 5,
       "name": "Samsung",
-      "share": 7.27,
-      "change": 0.07,
+      "share": 7.38,
+      "change": 0.18,
       "products": "Galaxy Buds Max",
       "price": "$249-$349"
     },
     {
       "rank": 6,
       "name": "JBL",
-      "share": 6.98,
+      "share": 7.01,
       "change": 0,
       "products": "Tour One M2",
       "price": "$199-$299"
@@ -55,7 +55,7 @@
     {
       "rank": 7,
       "name": "Audio-Technica",
-      "share": 5.41,
+      "share": 5.43,
       "change": 0,
       "products": "M50xBT2",
       "price": "$149-$249"
@@ -71,7 +71,7 @@
     {
       "rank": 9,
       "name": "Shure",
-      "share": 3.81,
+      "share": 3.84,
       "change": 0,
       "products": "AONIC 50",
       "price": "$299-$399"
@@ -79,7 +79,7 @@
     {
       "rank": 10,
       "name": "Bang & Olufsen",
-      "share": 3.25,
+      "share": 3.24,
       "change": 0,
       "products": "H95",
       "price": "$499-$899"
