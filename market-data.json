@@ -1,53 +1,53 @@
 {
-  "lastUpdate": "2026-04-02",
+  "lastUpdate": "2026-04-03",
   "marketSize": "$42.77B",
-  "marketGrowth": "+8.24%",
-  "cr10": "68.46%",
+  "marketGrowth": "+8.17%",
+  "cr10": "68.55%",
   "topBrands": [
     {
       "rank": 1,
       "name": "Apple",
-      "share": 18.38,
-      "change": -0.12,
+      "share": 18.28,
+      "change": -0.22,
       "products": "AirPods Max",
       "price": "$549"
     },
     {
       "rank": 2,
       "name": "Sony",
-      "share": 15.43,
-      "change": 0.23,
+      "share": 15.5,
+      "change": 0.3,
       "products": "WH-1000XM5",
       "price": "$349-$399"
     },
     {
       "rank": 3,
       "name": "Bose",
-      "share": 13.08,
-      "change": 0.28,
+      "share": 13.13,
+      "change": 0.33,
       "products": "QC Ultra",
       "price": "$379-$429"
     },
     {
       "rank": 4,
       "name": "Sennheiser",
-      "share": 8.34,
-      "change": -0.16,
+      "share": 8.41,
+      "change": -0.09,
       "products": "Momentum 4",
       "price": "$299-$379"
     },
     {
       "rank": 5,
       "name": "Samsung",
-      "share": 7.65,
-      "change": 0.45,
+      "share": 7.76,
+      "change": 0.56,
       "products": "Galaxy Buds Max",
       "price": "$249-$349"
     },
     {
       "rank": 6,
       "name": "JBL",
-      "share": 6.97,
+      "share": 6.92,
       "change": 0,
       "products": "Tour One M2",
       "price": "$199-$299"
@@ -55,7 +55,7 @@
     {
       "rank": 7,
       "name": "Audio-Technica",
-      "share": 5.48,
+      "share": 5.5,
       "change": 0,
       "products": "M50xBT2",
       "price": "$149-$249"
@@ -63,7 +63,7 @@
     {
       "rank": 8,
       "name": "Beats",
-      "share": 4.71,
+      "share": 4.67,
       "change": 0,
       "products": "Studio Pro",
       "price": "$349-$399"
@@ -79,7 +79,7 @@
     {
       "rank": 10,
       "name": "Bang & Olufsen",
-      "share": 3.2,
+      "share": 3.22,
       "change": 0,
       "products": "H95",
       "price": "$499-$899"
