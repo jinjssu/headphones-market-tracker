@@ -1,53 +1,53 @@
 {
-  "lastUpdate": "2026-04-07",
-  "marketSize": "$42.75B",
-  "marketGrowth": "+8.24%",
-  "cr10": "68.5%",
+  "lastUpdate": "2026-04-08",
+  "marketSize": "$42.84B",
+  "marketGrowth": "+8.2%",
+  "cr10": "68.55%",
   "topBrands": [
     {
       "rank": 1,
       "name": "Apple",
-      "share": 18.56,
-      "change": 0.06,
+      "share": 18.46,
+      "change": -0.04,
       "products": "AirPods Max",
       "price": "$549"
     },
     {
       "rank": 2,
       "name": "Sony",
-      "share": 15.42,
-      "change": 0.22,
+      "share": 15.4,
+      "change": 0.2,
       "products": "WH-1000XM5",
       "price": "$349-$399"
     },
     {
       "rank": 3,
       "name": "Bose",
-      "share": 13.1,
-      "change": 0.3,
+      "share": 13.09,
+      "change": 0.29,
       "products": "QC Ultra",
       "price": "$379-$429"
     },
     {
       "rank": 4,
       "name": "Sennheiser",
-      "share": 8.46,
-      "change": -0.04,
+      "share": 8.4,
+      "change": -0.1,
       "products": "Momentum 4",
       "price": "$299-$379"
     },
     {
       "rank": 5,
       "name": "Samsung",
-      "share": 7.86,
-      "change": 0.66,
+      "share": 7.89,
+      "change": 0.69,
       "products": "Galaxy Buds Max",
       "price": "$249-$349"
     },
     {
       "rank": 6,
       "name": "JBL",
-      "share": 6.89,
+      "share": 6.91,
       "change": 0,
       "products": "Tour One M2",
       "price": "$199-$299"
@@ -55,7 +55,7 @@
     {
       "rank": 7,
       "name": "Audio-Technica",
-      "share": 5.5,
+      "share": 5.51,
       "change": 0,
       "products": "M50xBT2",
       "price": "$149-$249"
@@ -63,7 +63,7 @@
     {
       "rank": 8,
       "name": "Beats",
-      "share": 4.56,
+      "share": 4.57,
       "change": 0,
       "products": "Studio Pro",
       "price": "$349-$399"
@@ -79,7 +79,7 @@
     {
       "rank": 10,
       "name": "Bang & Olufsen",
-      "share": 3.23,
+      "share": 3.22,
       "change": 0,
       "products": "H95",
       "price": "$499-$899"
