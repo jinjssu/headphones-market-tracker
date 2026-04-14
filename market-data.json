@@ -1,8 +1,8 @@
 {
-  "lastUpdate": "2026-04-13",
+  "lastUpdate": "2026-04-14",
   "marketSize": "$42.84B",
-  "marketGrowth": "+8.27%",
-  "cr10": "68.53%",
+  "marketGrowth": "+8.25%",
+  "cr10": "68.42%",
   "topBrands": [
     {
       "rank": 1,
@@ -15,24 +15,24 @@
     {
       "rank": 2,
       "name": "Sony",
-      "share": 15.52,
-      "change": 0.32,
+      "share": 15.58,
+      "change": 0.38,
       "products": "WH-1000XM5",
       "price": "$349-$399"
     },
     {
       "rank": 3,
       "name": "Bose",
-      "share": 13.03,
-      "change": 0.23,
+      "share": 13.04,
+      "change": 0.24,
       "products": "QC Ultra",
       "price": "$379-$429"
     },
     {
       "rank": 4,
       "name": "Sennheiser",
-      "share": 8.3,
-      "change": -0.2,
+      "share": 8.27,
+      "change": -0.23,
       "products": "Momentum 4",
       "price": "$299-$379"
     },
@@ -47,7 +47,7 @@
     {
       "rank": 6,
       "name": "JBL",
-      "share": 6.97,
+      "share": 6.95,
       "change": 0,
       "products": "Tour One M2",
       "price": "$199-$299"
@@ -55,7 +55,7 @@
     {
       "rank": 7,
       "name": "Audio-Technica",
-      "share": 5.55,
+      "share": 5.58,
       "change": 0,
       "products": "M50xBT2",
       "price": "$149-$249"
@@ -63,7 +63,7 @@
     {
       "rank": 8,
       "name": "Beats",
-      "share": 4.42,
+      "share": 4.39,
       "change": 0,
       "products": "Studio Pro",
       "price": "$349-$399"
@@ -71,7 +71,7 @@
     {
       "rank": 9,
       "name": "Shure",
-      "share": 3.7,
+      "share": 3.71,
       "change": 0,
       "products": "AONIC 50",
       "price": "$299-$399"
@@ -79,7 +79,7 @@
     {
       "rank": 10,
       "name": "Bang & Olufsen",
-      "share": 3.23,
+      "share": 3.19,
       "change": 0,
       "products": "H95",
       "price": "$499-$899"
