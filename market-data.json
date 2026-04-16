@@ -1,53 +1,53 @@
 {
-  "lastUpdate": "2026-04-14",
-  "marketSize": "$42.84B",
-  "marketGrowth": "+8.25%",
-  "cr10": "68.42%",
+  "lastUpdate": "2026-04-16",
+  "marketSize": "$42.82B",
+  "marketGrowth": "+8.21%",
+  "cr10": "68.46%",
   "topBrands": [
     {
       "rank": 1,
       "name": "Apple",
-      "share": 18.73,
-      "change": 0.23,
+      "share": 18.63,
+      "change": 0.13,
       "products": "AirPods Max",
       "price": "$549"
     },
     {
       "rank": 2,
       "name": "Sony",
-      "share": 15.58,
-      "change": 0.38,
+      "share": 15.51,
+      "change": 0.31,
       "products": "WH-1000XM5",
       "price": "$349-$399"
     },
     {
       "rank": 3,
       "name": "Bose",
-      "share": 13.04,
-      "change": 0.24,
+      "share": 13.05,
+      "change": 0.25,
       "products": "QC Ultra",
       "price": "$379-$429"
     },
     {
       "rank": 4,
       "name": "Sennheiser",
-      "share": 8.27,
-      "change": -0.23,
+      "share": 8.19,
+      "change": -0.31,
       "products": "Momentum 4",
       "price": "$299-$379"
     },
     {
       "rank": 5,
       "name": "Samsung",
-      "share": 8.08,
-      "change": 0.88,
+      "share": 8.13,
+      "change": 0.93,
       "products": "Galaxy Buds Max",
       "price": "$249-$349"
     },
     {
       "rank": 6,
       "name": "JBL",
-      "share": 6.95,
+      "share": 6.97,
       "change": 0,
       "products": "Tour One M2",
       "price": "$199-$299"
@@ -55,7 +55,7 @@
     {
       "rank": 7,
       "name": "Audio-Technica",
-      "share": 5.58,
+      "share": 5.6,
       "change": 0,
       "products": "M50xBT2",
       "price": "$149-$249"
@@ -63,7 +63,7 @@
     {
       "rank": 8,
       "name": "Beats",
-      "share": 4.39,
+      "share": 4.4,
       "change": 0,
       "products": "Studio Pro",
       "price": "$349-$399"
@@ -71,7 +71,7 @@
     {
       "rank": 9,
       "name": "Shure",
-      "share": 3.71,
+      "share": 3.75,
       "change": 0,
       "products": "AONIC 50",
       "price": "$299-$399"
@@ -79,7 +79,7 @@
     {
       "rank": 10,
       "name": "Bang & Olufsen",
-      "share": 3.19,
+      "share": 3.24,
       "change": 0,
       "products": "H95",
       "price": "$499-$899"
